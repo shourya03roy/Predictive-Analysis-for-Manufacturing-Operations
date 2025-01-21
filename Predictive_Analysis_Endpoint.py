@@ -54,6 +54,10 @@ def train_model():
         return jsonify({'error': 'No data uploaded'}), 400
     
     try:
+
+        # Remove Machine_ID
+        df = df.drop(columns = ['Machine_ID'])
+
         # Encode categorical columns ('Assembly_Line_No' and 'Downtime')
         df['Assembly_Line_No'] = aln_encoder.fit_transform(df['Assembly_Line_No'])
         df['Downtime'] = downtime_encoder.fit_transform(df['Downtime'])

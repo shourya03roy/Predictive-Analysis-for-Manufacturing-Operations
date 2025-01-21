@@ -5,6 +5,7 @@
 This project provides an API for predictive analysis of manufacturing operations. It allows users to upload a dataset, train a machine learning model, and make predictions about machine downtime based on manufacturing data.
 
 The dataset used in this project is Machine_Downtime.csv, which contains the following columns:
+-Machine_ID 
 -Assembly_Line_No (Categorical): ['Shopfloor-L1', 'Shopfloor-L2', 'Shopfloor-L3']
 -Hydraulic_Pressure(bar)
 -Coolant_Pressure(bar)
