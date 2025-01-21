@@ -53,7 +53,9 @@ pandas
 
 ### Setup and Execution
 Install the required libraries: pip install flask scikit-learn pandas
+
 Start the Flask server: python Predictive_Analysis_Endpoint.py
+
 The API will run on http://127.0.0.1:5000 by default.
 
 ## API Endpoints
@@ -99,6 +101,7 @@ Method: POST
 Description: Make predictions based on input data.
 
 Request Example 1:
+
 curl -X POST -H "Content-Type: application/json" -d '{
     "Assembly_Line_No": "Shopfloor-L1",
     "Hydraulic_Pressure(bar)": 120.5,
@@ -121,6 +124,7 @@ Reponse Example 1:
 }
 
 Request Example 2:
+
 curl -X POST -H "Content-Type: application/json" -d '{
     "Assembly_Line_No": "Shopfloor-L1",
     "Hydraulic_Pressure(bar)": 135.811931,
