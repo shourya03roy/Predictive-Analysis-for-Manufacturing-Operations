@@ -145,6 +145,8 @@ Reponse Example 2:
 ## Notes
 
 Make sure the dataset includes all required columns.
+
 Ensure that the dataset format matches the expected structure to avoid errors.
+
 For unseen labels in Assembly_Line_No or Downtime, update the encoders accordingly.
 
