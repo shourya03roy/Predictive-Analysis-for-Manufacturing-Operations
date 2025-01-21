@@ -6,20 +6,35 @@ This project provides an API for predictive analysis of manufacturing operations
 
 The dataset used in this project is Machine_Downtime.csv, which contains the following columns:
 -Machine_ID 
+
 -Assembly_Line_No (Categorical): ['Shopfloor-L1', 'Shopfloor-L2', 'Shopfloor-L3']
+
 -Hydraulic_Pressure(bar)
+
 -Coolant_Pressure(bar)
+
 -Air_System_Pressure(bar)
+
 -Coolant_Temperature
+
 -Hydraulic_Oil_Temperature(?C)
+
 -Spindle_Bearing_Temperature(?C)
+
 -Spindle_Vibration(?m)
+
 -Tool_Vibration(?m)
+
 -Spindle_Speed(RPM)
+
 -Voltage(volts)
+
 -Torque(Nm)
+
 -Cutting(kN)
+
 -Downtime (Categorical): ['Machine_Failure', 'No_Machine_Failure']
+
 
 The API provides three endpoints:
 /upload: Upload a CSV file.
